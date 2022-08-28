@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:ital,wght@0,300;0,600;1,400&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    min-height: 600px;
+    padding: 80px 0;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-color: #2575fc;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.main{
+    margin: auto;
+    background-color: rgb(222, 216, 248);
+    width: 90%;
+    overflow: hidden;
+    padding: .7em;
+    border-radius: 1em;
+    max-width: 80vw;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repet(auto-fit, minmax(310px, 1fr));
+    gap: .6em ;
+
+    animation: mostrar 1.5s ease-in-out; 
+   
+}
+
+@keyframes mostrar {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.main_figure{
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: rgb(240, 237, 237) ;
+    display: flex;
+}
+
+.main_img{
+    margin: auto;
+    width: 80%;
+    max-width: 60vw;
+}
+
+.main_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+
+.main_form{
+    display: grid;
+    justify-items: center;
+    gap: 1.5em;
+    
+}
+
+.main_input{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+
+.main_input--send{
+    background-color: #5901fc;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main_title{
+    font-size: 2.3rem;
+}
+
+.main_paragraph{
+    margin: .3em 0;
+}
+
+.main_social{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-auto-columns: max-content;
+    gap: 1em;
+}
+
+
+.main_link{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .6em 1.5em;
+}
+
+.main_link:hover{
+    background-color: #fff;
+}
+
+.main_icon{
+    width: 30px;
+    height: 30px;
+}
+
+
